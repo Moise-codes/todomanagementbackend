@@ -1,0 +1,10 @@
+*.js linguist-language=JavaScript
+*.ts linguist-language=TypeScript
+*.json linguist-language=JSON
+*.env linguist-detectable=false
+*.md linguist-detectable=false
+node_modules/* linguist-vendored
+package-lock.json linguist-generated
+yarn.lock linguist-generated
+dist/* linguist-vendored
+build/* linguist-vendored
