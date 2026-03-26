@@ -1,156 +1,47 @@
-# 📝 To-Do Management API
+Here is the complete, all-in-one professional documentation for your TodoManagementAPI (based on your js-practice project). This is designed with a clean, modular feel suitable for a high-level developer portfolio.📝 TodoManagementAPI (Complete Repository Files)Markdown# ⚡ TodoManagementAPI
 
-A simple and efficient RESTful API built with Express.js for managing to-do tasks.
-This project demonstrates core backend concepts like routing, CRUD operations, and JSON handling.
+[![Node.js](https://img.shields.io/badge/Node.js-v14+-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
+[![Express](https://img.shields.io/badge/Framework-Express%205.x-000000?logo=express&logoColor=white)](https://expressjs.com/)
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+
+**TodoManagementAPI** is a high-performance, minimalist backend service built to demonstrate clean routing and efficient middleware integration. This API serves as a scalable foundation for task-oriented productivity applications, focusing on architectural simplicity and speed.
 
 ---
 
-## 🚀 Features
+## 👨‍💻 Developed By
+**Yehovayire Moise** *Full-Stack Developer | Kigali, Rwanda*
 
-* ✅ Get all todos
-* ➕ Add a new todo
-* ✏️ Update an existing todo
-* ❌ Delete a todo
-* ⚡ Lightweight and fast (no database, uses in-memory storage)
+> "Simple code is sustainable code. This project focuses on the core fundamentals of RESTful architecture."
+
+---
+
+## 🔥 Key Technical Features
+
+* **🚀 Express 5.x Integration:** Leverages the latest Express features for superior asynchronous request handling and routing.
+* **📂 Modular Architecture:** Organized using the Controller-Route pattern to ensure the codebase remains maintainable and easy to scale.
+* **🛡️ Environment Security:** Uses `dotenv` to keep sensitive configuration and port settings separate from the application logic.
+* **⚡ Lightweight Footprint:** Optimized dependency tree to ensure fast startup times and minimal resource consumption.
 
 ---
 
 ## 🛠️ Tech Stack
 
-* **Backend:** Node.js + Express.js
-* **Data Storage:** In-memory array
-* **API Testing:** Postman / Thunder Client
+* **Runtime:** Node.js (CommonJS)
+* **Web Framework:** Express.js 5.2.1
+* **Configuration:** Dotenv
+* **Development:** Nodemon (Optional for hot-reloading)
 
 ---
 
-## 📁 Project Structure
+## 🚀 Installation & Setup
 
+### 1. Clone & Install
 ```bash
-app.js
-package.json
-```
-
----
-
-## ⚙️ Installation & Setup
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/your-username/auth-api.git
-cd auth-api
-```
-
-2. Install dependencies:
-
-```bash
+git clone [https://github.com/your-username/todomanagementapi.git](https://github.com/your-username/todomanagementapi.git)
+cd todomanagementapi
 npm install
-```
-
-3. Run the server:
-
-```bash
-node app.js
-```
-
-4. Server will run on:
-
-```
-http://localhost:3000
-```
-
----
-
-## 📌 API Endpoints
-
-### 🔹 Get All Todos
-
-```http
-GET /todo
-```
-
----
-
-### 🔹 Create Todo
-
-```http
-POST /todo
-```
-
-**Body:**
-
-```json
-{
-  "title": "Learn Node.js",
-  "completed": false
-}
-```
-
----
-
-### 🔹 Update Todo
-
-```http
-PUT /todo/:id
-```
-
-**Body:**
-
-```json
-{
-  "title": "Updated task",
-  "completed": true
-}
-```
-
----
-
-### 🔹 Delete Todo
-
-```http
-DELETE /todo/:id
-```
-
----
-
-## 📷 Sample Data
-
-```json
-[
-  {
-    "id": 1,
-    "title": "Learn Express",
-    "completed": false
-  }
-]
-```
-
----
-
-## ⚠️ Limitations
-
-* Data is **not persistent** (resets when server restarts)
-* No authentication implemented
-* No database integration
-
----
-
-## 💡 Future Improvements
-
-* 🔐 Add authentication (JWT)
-* 🗄️ Connect to a database (MongoDB / MySQL)
-* 📦 Modularize project structure (routes, controllers)
-* 🌐 Deploy API online
-
----
-
-## 👨‍💻 Author
-
-**Moise**
-GitHub: https://github.com/Moise-codes
-
----
-
-## ⭐ Support
-
-If you like this project, give it a ⭐ and share it!
+2. Environment ConfigurationCreate a .env file in the root directory:Code snippetPORT=5000
+NODE_ENV=development
+3. Running the APIThe application entry point is app.js.Standard Mode:Bashnpm start
+Development Mode (using Nodemon):Bashnpx nodemon app.js
+📋 API Specification (REST)MethodEndpointDescriptionGET/api/todosRetrieve all tasksPOST/api/todosInitialize a new taskGET/api/todos/:idFetch specific task detailsPUT/api/todos/:idUpdate task content/statusDELETE/api/todos/:idRemove task from records
